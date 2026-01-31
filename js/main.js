@@ -207,6 +207,22 @@ document.addEventListener('DOMContentLoaded', function() {
     lazyImages.forEach(img => {
         imageObserver.observe(img);
     });
+
+    // ===== PROJETOS "VER MAIS" =====
+    const verMaisButtons = document.querySelectorAll('.ver-mais-btn');
+    verMaisButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const targetId = button.dataset.target;
+            const section = document.getElementById(targetId);
+            if (!section) {
+                return;
+            }
+
+            const isExpanded = section.classList.toggle('is-expanded');
+            button.setAttribute('aria-expanded', String(isExpanded));
+            button.textContent = isExpanded ? 'Ver menos' : 'Ver mais';
+        });
+    });
     
     // ===== FORM VALIDATION (for future contact form) =====
     function validateEmail(email) {
