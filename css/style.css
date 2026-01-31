@@ -97,6 +97,57 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-2px);
 }
 
+/* WhatsApp flutuante */
+.whatsapp-btn {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1200;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.8rem 1.1rem;
+    background-color: #25D366;
+    color: #111111;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+    background-color: #1fbe5a;
+}
+
+.whatsapp-btn:focus-visible {
+    outline: 2px solid #FFD95B;
+    outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+    .whatsapp-btn {
+        right: 16px;
+        bottom: 16px;
+        padding: 0.75rem;
+        border-radius: 999px;
+    }
+
+    .whatsapp-btn span {
+        display: none;
+    }
+}
+
 /* Navbar */
 .navbar {
     position: fixed;
@@ -170,53 +221,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
-/* Dropdown */
-.dropdown {
-    position: relative;
-}
-
-.dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: rgba(17, 17, 17, 0.98);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(207, 207, 207, 0.1);
-    border-radius: 2px;
-    padding: 1.5rem 0;
-    min-width: 200px;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: all 0.4s ease;
-    margin-top: 1rem;
-}
-
-.dropdown:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.dropdown-menu li {
-    list-style: none;
-}
-
-.dropdown-menu a {
-    display: block;
-    padding: 0.8rem 2rem;
-    color: #EAEAEA;
-    text-decoration: none;
-    transition: all 0.4s ease;
-    font-size: 0.8rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-}
-
-.dropdown-menu a:hover {
-    background-color: rgba(255, 217, 91, 0.1);
-    color: #FFD95B;
-}
 
 /* Nav Toggle */
 .nav-toggle {
@@ -372,7 +376,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .servicos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
     margin-top: 4rem;
 }
@@ -383,6 +387,14 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid rgba(207, 207, 207, 0.1);
     transition: all 0.4s ease;
     position: relative;
+    height: 100%;
+    display: flex;
+}
+
+.servico-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .servico-card:hover {

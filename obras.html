@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Entre em contato com a Oce Yellow Engenharia - Estamos à disposição para tirar dúvidas, orçar seu projeto ou simplesmente bater um papo sobre arquitetura e engenharia.">
-    <meta name="keywords" content="contato, orçamento, projeto, engenharia, Oce Yellow Engenharia">
+    <meta name="description" content="Obras e projetos da Oce Yellow Engenharia - acompanhe nossos lançamentos, obras em andamento e entregas.">
+    <meta name="keywords" content="obras, projetos, engenharia, arquitetura, Oce Yellow Engenharia">
     <meta name="author" content="Oce Yellow Engenharia">
-    <meta property="og:title" content="Contato - Oce Yellow Engenharia">
-    <meta property="og:description" content="Entre em contato conosco para orçar seu projeto">
+    <meta property="og:title" content="Obras - Oce Yellow Engenharia">
+    <meta property="og:description" content="Confira obras e projetos da Oce Yellow Engenharia">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yellowengenharia.com.br/contato">
+    <meta property="og:url" content="https://yellowengenharia.com.br/obras">
     
-    <title>Contato - Oce Yellow Engenharia</title>
+    <title>Obras - Oce Yellow Engenharia</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
     
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/obras.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -46,9 +46,6 @@
                         <a href="obras.html" class="nav-link">OBRAS</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html#sobre" class="nav-link">SOBRE</a>
-                    </li>
-                    <li class="nav-item">
                         <a href="contato.html" class="nav-link">CONTATO</a>
                     </li>
                 </ul>
@@ -63,31 +60,63 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero contato-hero">
+    <section class="hero obras-hero">
         <div class="hero-content">
             <div class="container">
-                <h1 class="hero-title">
-                    FALE COM A YELLOW
-                </h1>
+                <h1 class="hero-title">OBRAS</h1>
                 <p class="hero-subtitle">
-                    Estamos à disposição para tirar dúvidas, orçar seu projeto ou simplesmente bater um papo sobre arquitetura e engenharia.
+                    Acompanhe projetos em diferentes fases: lançamentos, obras em andamento e entregas.
                 </p>
             </div>
         </div>
     </section>
 
-    <section id="contato" class="contato">
+    <!-- Obras Section -->
+    <section class="obras-section">
         <div class="container">
-            <h2>Fale com a Yellow</h2>
-            <p>Preencha o formulário abaixo e entraremos em contato com você.</p>
-            
-            <form action="https://formsubmit.co/contato@yellowengenharia.com" method="POST">
-                <input type="text" name="name" placeholder="Seu nome" required>
-                <input type="email" name="email" placeholder="Seu e-mail" required>
-                <textarea name="message" placeholder="Sua mensagem" rows="5" required></textarea>
-                <button type="submit">Enviar Mensagem</button>
-            </form>
+            <div class="obras-grid">
+                <div class="obra-card">
+                    <img src="img/red-house-pacaembu.jpg" alt="Red House Pacaembu">
+                    <div class="obra-card-content">
+                        <h3>Red House Pacaembu</h3>
+                        <span class="tag-status em-obra">Em obra</span>
+                        <ul class="caracteristicas">
+                            <li>Área: 2.100m²</li>
+                            <li>Salas: 12</li>
+                            <li>Laboratórios: 3</li>
+                        </ul>
+                        <a href="/obras/red-house-pacaembu.html" class="obra-link">Ver detalhes</a>
+                    </div>
+                </div>
 
+                <div class="obra-card">
+                    <img src="img/jardins-residence.jpg" alt="Jardins Residence">
+                    <div class="obra-card-content">
+                        <h3>Jardins Residence</h3>
+                        <span class="tag-status lancamento">Lançamento</span>
+                        <ul class="caracteristicas">
+                            <li>Área: 1.450m²</li>
+                            <li>Suítes: 5</li>
+                            <li>Pavimentos: 3</li>
+                        </ul>
+                        <a href="/obras/jardins-residence.html" class="obra-link">Ver detalhes</a>
+                    </div>
+                </div>
+
+                <div class="obra-card">
+                    <img src="img/corporativo-vila-nova.jpg" alt="Corporativo Vila Nova">
+                    <div class="obra-card-content">
+                        <h3>Corporativo Vila Nova</h3>
+                        <span class="tag-status entregue">Entregue</span>
+                        <ul class="caracteristicas">
+                            <li>Área: 3.800m²</li>
+                            <li>Andares: 7</li>
+                            <li>Salas: 24</li>
+                        </ul>
+                        <a href="/obras/corporativo-vila-nova.html" class="obra-link">Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -151,6 +180,5 @@
     </a>
 
     <script src="js/main.js"></script>
-    <script src="js/contato.js"></script>
 </body>
-</html> 
+</html>
