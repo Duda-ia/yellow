@@ -27,11 +27,11 @@ O design foi inspirado na **Construtora Gamboa**, incorporando:
 - **Animações**: Transições leves de fade-in e hover
 
 ### Funcionalidades
-- ✅ Navegação fixa e discreta com menu dropdown
+- ✅ Navegação fixa e discreta
 - ✅ Hero section com headline elegante
 - ✅ Seção "Sobre" com manifesto clean
 - ✅ Galeria de portfólio com hover colorido
-- ✅ Slider de depoimentos discreto
+- ✅ Seção de parceiros com logos
 - ✅ Design totalmente responsivo
 - ✅ Animações sutis e elegantes
 - ✅ Otimizado para SEO
@@ -128,7 +128,6 @@ O site é totalmente responsivo e funciona em:
 ### Navbar
 - Logo à esquerda
 - Menu responsivo à direita
-- Dropdown para serviços
 - Efeito de scroll sutil
 
 ### Hero Section
@@ -141,7 +140,7 @@ O site é totalmente responsivo e funciona em:
 - **Sobre**: Manifesto elegante e estatísticas
 - **Serviços**: Cards minimalistas
 - **Portfólio**: Grade com hover colorido
-- **Depoimentos**: Slider discreto
+- **Parceiros**: Logos em grid
 - **CTA**: Chamada sutil para ação
 - **Footer**: Informações de contato
 
@@ -152,11 +151,8 @@ O site é totalmente responsivo e funciona em:
 - Animações suaves
 - Fechamento automático
 
-### Slider de Depoimentos
-- Navegação automática (6s)
-- Controles manuais
-- Indicadores visuais
-- Navegação por teclado
+### Parceiros
+- Grid responsivo de logos
 
 ### Animações
 - Scroll reveal sutil

@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Entre em contato com a Oce Yellow Engenharia - Estamos à disposição para tirar dúvidas, orçar seu projeto ou simplesmente bater um papo sobre arquitetura e engenharia.">
-    <meta name="keywords" content="contato, orçamento, projeto, engenharia, Oce Yellow Engenharia">
+    <meta name="description" content="Projetos da Oce Yellow Engenharia - acompanhe lançamentos, projetos em andamento e entregas.">
+    <meta name="keywords" content="projetos, engenharia, arquitetura, Oce Yellow Engenharia">
     <meta name="author" content="Oce Yellow Engenharia">
-    <meta property="og:title" content="Contato - Oce Yellow Engenharia">
-    <meta property="og:description" content="Entre em contato conosco para orçar seu projeto">
+    <meta property="og:title" content="Projetos - Oce Yellow Engenharia">
+    <meta property="og:description" content="Confira projetos da Oce Yellow Engenharia">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yellowengenharia.com.br/contato">
+    <meta property="og:url" content="https://yellowengenharia.com.br/projetos">
     
-    <title>Contato - Oce Yellow Engenharia</title>
+    <title>Projetos - Oce Yellow Engenharia</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
     
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/projetos.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -46,9 +46,6 @@
                         <a href="projetos.html" class="nav-link">PROJETOS</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html#sobre" class="nav-link">SOBRE</a>
-                    </li>
-                    <li class="nav-item">
                         <a href="contato.html" class="nav-link">CONTATO</a>
                     </li>
                 </ul>
@@ -63,31 +60,94 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero contato-hero">
+    <section class="hero projetos-hero">
         <div class="hero-content">
             <div class="container">
-                <h1 class="hero-title">
-                    FALE COM A YELLOW
-                </h1>
+                <h1 class="hero-title">PROJETOS</h1>
                 <p class="hero-subtitle">
-                    Estamos à disposição para tirar dúvidas, orçar seu projeto ou simplesmente bater um papo sobre arquitetura e engenharia.
+                    Acompanhe projetos em diferentes fases: lançamentos, projetos em andamento e entregas.
                 </p>
             </div>
         </div>
     </section>
 
-    <section id="contato" class="contato">
+    <!-- Projetos Residenciais -->
+    <section id="residencial" class="projetos-section">
         <div class="container">
-            <h2>Fale com a Yellow</h2>
-            <p>Preencha o formulário abaixo e entraremos em contato com você.</p>
-            
-            <form action="https://formsubmit.co/contato@yellowengenharia.com" method="POST">
-                <input type="text" name="name" placeholder="Seu nome" required>
-                <input type="email" name="email" placeholder="Seu e-mail" required>
-                <textarea name="message" placeholder="Sua mensagem" rows="5" required></textarea>
-                <button type="submit">Enviar Mensagem</button>
-            </form>
+            <h2 class="section-title">RESIDENCIAL</h2>
+            <div class="projetos-grid">
+                <div class="projeto-card">
+                    <img src="img/red-house-pacaembu.jpg" alt="Red House Pacaembu">
+                    <div class="projeto-card-content">
+                        <h3>Red House Pacaembu</h3>
+                        <span class="tag-status em-obra">Em obra</span>
+                        <ul class="caracteristicas">
+                            <li>Área: 2.100m²</li>
+                            <li>Salas: 12</li>
+                            <li>Laboratórios: 3</li>
+                        </ul>
+                        <a href="projetos/red-house-pacaembu.html" class="projeto-link">Ver detalhes</a>
+                    </div>
+                </div>
 
+                <div class="projeto-card">
+                    <img src="img/jardins-residence.jpg" alt="Jardins Residence">
+                    <div class="projeto-card-content">
+                        <h3>Jardins Residence</h3>
+                        <span class="tag-status lancamento">Lançamento</span>
+                        <ul class="caracteristicas">
+                            <li>Área: 1.450m²</li>
+                            <li>Suítes: 5</li>
+                            <li>Pavimentos: 3</li>
+                        </ul>
+                        <a href="projetos/jardins-residence.html" class="projeto-link">Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos Comerciais -->
+    <section id="comercial" class="projetos-section">
+        <div class="container">
+            <h2 class="section-title">COMERCIAL</h2>
+            <div class="projetos-grid">
+                <div class="projeto-card">
+                    <img src="img/corporativo-vila-nova.jpg" alt="Corporativo Vila Nova">
+                    <div class="projeto-card-content">
+                        <h3>Corporativo Vila Nova</h3>
+                        <span class="tag-status entregue">Entregue</span>
+                        <ul class="caracteristicas">
+                            <li>Área: 3.800m²</li>
+                            <li>Andares: 7</li>
+                            <li>Salas: 24</li>
+                        </ul>
+                        <a href="projetos/corporativo-vila-nova.html" class="projeto-link">Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos Amenities -->
+    <section id="amenities" class="projetos-section">
+        <div class="container">
+            <h2 class="section-title">AMENITIES</h2>
+            <div class="projetos-grid">
+                <div class="projeto-card">
+                    <img src="img/amenities-sky-garden.jpg" alt="Sky Garden Amenities">
+                    <div class="projeto-card-content">
+                        <h3>Sky Garden Amenities</h3>
+                        <span class="tag-status em-obra">Em obra</span>
+                        <ul class="caracteristicas">
+                            <li>Área: 980m²</li>
+                            <li>Ambientes: 6</li>
+                            <li>Áreas verdes: 2</li>
+                        </ul>
+                        <a href="projetos/sky-garden-amenities.html" class="projeto-link">Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -151,6 +211,5 @@
     </a>
 
     <script src="js/main.js"></script>
-    <script src="js/contato.js"></script>
 </body>
-</html> 
+</html>

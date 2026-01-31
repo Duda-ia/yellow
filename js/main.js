@@ -52,66 +52,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // ===== TESTIMONIALS SLIDER =====
-    const testimonialItems = document.querySelectorAll('.depoimento-item');
-    const prevBtn = document.getElementById('prev-btn');
-    const nextBtn = document.getElementById('next-btn');
-    const dots = document.querySelectorAll('.dot');
-    let currentSlide = 0;
-    
-    function showSlide(index) {
-        // Hide all slides
-        testimonialItems.forEach(item => {
-            item.classList.remove('active');
-        });
-        
-        // Remove active class from all dots
-        dots.forEach(dot => {
-            dot.classList.remove('active');
-        });
-        
-        // Show current slide
-        if (testimonialItems[index]) {
-            testimonialItems[index].classList.add('active');
-        }
-        
-        // Activate current dot
-        if (dots[index]) {
-            dots[index].classList.add('active');
-        }
-        
-        currentSlide = index;
-    }
-    
-    function nextSlide() {
-        const next = (currentSlide + 1) % testimonialItems.length;
-        showSlide(next);
-    }
-    
-    function prevSlide() {
-        const prev = (currentSlide - 1 + testimonialItems.length) % testimonialItems.length;
-        showSlide(prev);
-    }
-    
-    // Event listeners for slider controls
-    if (nextBtn) {
-        nextBtn.addEventListener('click', nextSlide);
-    }
-    
-    if (prevBtn) {
-        prevBtn.addEventListener('click', prevSlide);
-    }
-    
-    // Dot navigation
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-            showSlide(index);
-        });
-    });
-    
-    // Auto-slide every 6 seconds
-    setInterval(nextSlide, 6000);
-    
     // ===== SCROLL REVEAL ANIMATIONS =====
     const observerOptions = {
         threshold: 0.1,
@@ -127,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
     
     // Observe elements for scroll reveal
-    const revealElements = document.querySelectorAll('.sobre-content, .servicos-grid, .portfolio-grid, .depoimentos-slider');
+    const revealElements = document.querySelectorAll('.sobre-content, .servicos-grid, .portfolio-grid, .grid-parceiros');
     revealElements.forEach(el => {
         observer.observe(el);
     });
@@ -205,15 +145,6 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', debouncedScrollHandler);
     
     // ===== ACCESSIBILITY IMPROVEMENTS =====
-    // Keyboard navigation for slider
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'ArrowLeft') {
-            prevSlide();
-        } else if (e.key === 'ArrowRight') {
-            nextSlide();
-        }
-    });
-    
     // Focus management for mobile menu
     if (navToggle) {
         navToggle.addEventListener('keydown', function(e) {
@@ -329,8 +260,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===== INITIALIZATION =====
     console.log('Oce Yellow Engenharia website loaded successfully!');
     
-    // Initialize first slide
-    if (testimonialItems.length > 0) {
-        showSlide(0);
-    }
 }); 

@@ -190,27 +190,13 @@
         gap: 1.5rem;
     }
     
-    /* Depoimentos Section */
-    .depoimentos {
+    /* Parceiros Section */
+    .parceiros {
         padding: 80px 0;
     }
     
-    .depoimento-text {
-        font-size: 1.1rem;
-    }
-    
-    .depoimento-author {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    .slider-controls {
-        gap: 2rem;
-    }
-    
-    .slider-btn {
-        width: 45px;
-        height: 45px;
+    .parceiros h2 {
+        font-size: 2rem;
     }
     
     /* CTA Section */
@@ -326,18 +312,9 @@
         font-size: 1rem;
     }
     
-    /* Depoimentos Section */
-    .depoimento-text {
-        font-size: 1rem;
-        line-height: 1.6;
-    }
-    
-    .author-info h4 {
-        font-size: 0.9rem;
-    }
-    
-    .author-info span {
-        font-size: 0.8rem;
+    /* Parceiros Section */
+    .parceiros h2 {
+        font-size: 1.8rem;
     }
     
     /* CTA Section */
@@ -471,7 +448,7 @@
     .section-title,
     .servico-card h3,
     .portfolio-info h3,
-    .depoimento-text,
+    .parceiros h2,
     .cta-content h2 {
         color: #000000;
     }
@@ -480,7 +457,6 @@
     .manifesto-text,
     .servico-card p,
     .portfolio-info p,
-    .author-info span,
     .cta-content p {
         color: #333333;
     }
@@ -494,7 +470,7 @@
     .sobre,
     .servicos,
     .portfolio,
-    .depoimentos,
+    .parceiros,
     .cta,
     .footer {
         background-color: #FFFFFF !important;
