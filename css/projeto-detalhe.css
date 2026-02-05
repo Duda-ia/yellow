@@ -7,6 +7,10 @@
     background-repeat: no-repeat;
 }
 
+.projeto-hero--builders {
+    background-image: url('../fotos/projetos/builders-barra-funda/builders-01.jpg');
+}
+
 .projeto-hero::before {
     content: '';
     position: absolute;
@@ -33,11 +37,24 @@
     gap: 3rem;
 }
 
+.projeto-detalhe-layout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3rem;
+    align-items: start;
+}
+
 .projeto-descricao h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
+}
+
+.projeto-descricao--sticky {
+    position: sticky;
+    top: 110px;
+    align-self: start;
 }
 
 .projeto-descricao p {
@@ -66,6 +83,77 @@
     margin-top: 3rem;
 }
 
+.projeto-galeria-mosaico {
+    margin-top: 2.5rem;
+}
+
+.projeto-detalhe-layout .projeto-galeria {
+    margin-top: 0;
+}
+
+.galeria-mosaico {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+}
+
+.galeria-mosaico--builders {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.galeria-mosaico--builders .galeria-item {
+    background-color: #0a0a0a;
+}
+
+.galeria-mosaico--builders .galeria-item.is-portrait {
+    aspect-ratio: 3 / 4;
+}
+
+.galeria-mosaico--builders .galeria-item.is-landscape {
+    aspect-ratio: 16 / 9;
+}
+
+.galeria-mosaico--builders .galeria-item.is-span-2 {
+    grid-column: 1 / -1;
+}
+
+.galeria-mosaico--builders .galeria-item img {
+    object-fit: contain;
+}
+
+.galeria-item {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    min-height: 140px;
+    border: 1px solid rgba(207, 207, 207, 0.1);
+    background-color: #0a0a0a;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.galeria-item.is-wide {
+    grid-column: span 7;
+}
+
+.galeria-item.is-medium {
+    grid-column: span 6;
+}
+
+.galeria-item.is-narrow {
+    grid-column: span 5;
+}
+
+.galeria-item.is-tall {
+    grid-row: span 2;
+}
+
 .galeria-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -82,6 +170,33 @@
 
 @media (max-width: 960px) {
     .projeto-detalhe-content {
+        grid-template-columns: 1fr;
+    }
+
+    .projeto-detalhe-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .projeto-descricao--sticky {
+        position: static;
+    }
+
+    .galeria-mosaico {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .galeria-item,
+    .galeria-item.is-wide,
+    .galeria-item.is-medium,
+    .galeria-item.is-narrow {
+        grid-column: span 6;
+    }
+
+    .galeria-item.is-tall {
+        grid-row: span 1;
+    }
+
+    .galeria-mosaico--builders {
         grid-template-columns: 1fr;
     }
 }
@@ -103,5 +218,9 @@
 
     .galeria-grid img {
         height: 150px;
+    }
+
+    .galeria-mosaico {
+        grid-template-columns: 1fr;
     }
 }
