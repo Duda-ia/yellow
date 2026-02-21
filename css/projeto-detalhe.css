@@ -30,6 +30,10 @@
     background-image: url('../fotos/projetos/redhouse-campogrande/campogrande6.png');
 }
 
+.projeto-hero--redhouse-higienopolis {
+    background-image: url('../fotos/projetos/redhouse-higienopolis/higienopolis1.png');
+}
+
 .projeto-hero::before {
     content: '';
     position: absolute;
@@ -137,6 +141,13 @@
     gap: 1.5rem;
 }
 
+.galeria-mosaico--higienopolis {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 180px;
+    grid-auto-flow: dense;
+    gap: 1.5rem;
+}
+
 .galeria-mosaico--alphaville {
     grid-auto-rows: auto;
     grid-auto-flow: row;
@@ -153,6 +164,10 @@
 }
 
 .galeria-mosaico--campogrande .galeria-item {
+    background-color: #0a0a0a;
+}
+
+.galeria-mosaico--higienopolis .galeria-item {
     background-color: #0a0a0a;
 }
 
@@ -196,6 +211,14 @@
     grid-column: 1 / -1;
 }
 
+.galeria-mosaico--higienopolis .galeria-item.is-portrait {
+    grid-row: span 2;
+}
+
+.galeria-mosaico--higienopolis .galeria-item.is-span-2 {
+    grid-column: 1 / -1;
+}
+
 .galeria-mosaico--alphaville .galeria-item.is-span-2 {
     grid-column: 1 / -1;
 }
@@ -206,6 +229,10 @@
 }
 
 .galeria-mosaico--campogrande .galeria-item img {
+    object-fit: cover;
+}
+
+.galeria-mosaico--higienopolis .galeria-item img {
     object-fit: cover;
 }
 
@@ -292,7 +319,8 @@
     .galeria-mosaico--femsa,
     .galeria-mosaico--veracruz,
     .galeria-mosaico--alphaville,
-    .galeria-mosaico--campogrande {
+    .galeria-mosaico--campogrande,
+    .galeria-mosaico--higienopolis {
         grid-template-columns: 1fr;
     }
 }
