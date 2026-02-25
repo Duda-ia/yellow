@@ -198,7 +198,7 @@ Este projeto está sob licença MIT. Sinta-se livre para usar, modificar e distr
 ## 📞 Suporte
 
 Para dúvidas ou suporte:
-- Email: contato@yellowengenharia.com.br
+- Email: contato@oceyellow.com.br
 - Telefone: +55 (11) 99999-9999
 
 ---
