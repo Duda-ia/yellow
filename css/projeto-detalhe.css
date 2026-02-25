@@ -90,6 +90,10 @@
     background-image: url('../fotos/projetos/casa-araripe-181/araripe.png');
 }
 
+.projeto-hero--piscina-kids {
+    background-image: url('../fotos/projetos/piscina-kids/parque1.png');
+}
+
 .projeto-hero::before {
     content: '';
     position: absolute;
@@ -306,6 +310,13 @@
     gap: 1.5rem;
 }
 
+.galeria-mosaico--piscina-kids {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 180px;
+    grid-auto-flow: dense;
+    gap: 1.5rem;
+}
+
 .galeria-mosaico--alphaville {
     grid-auto-rows: auto;
     grid-auto-flow: row;
@@ -382,6 +393,10 @@
 }
 
 .galeria-mosaico--araripe-182 .galeria-item {
+    background-color: #0a0a0a;
+}
+
+.galeria-mosaico--piscina-kids .galeria-item {
     background-color: #0a0a0a;
 }
 
@@ -545,6 +560,14 @@
     grid-column: 1 / -1;
 }
 
+.galeria-mosaico--piscina-kids .galeria-item.is-portrait {
+    grid-row: span 2;
+}
+
+.galeria-mosaico--piscina-kids .galeria-item.is-span-2 {
+    grid-column: 1 / -1;
+}
+
 .galeria-mosaico--alphaville .galeria-item.is-span-2 {
     grid-column: 1 / -1;
 }
@@ -615,6 +638,10 @@
 }
 
 .galeria-mosaico--araripe-182 .galeria-item img {
+    object-fit: cover;
+}
+
+.galeria-mosaico--piscina-kids .galeria-item img {
     object-fit: cover;
 }
 
@@ -720,7 +747,8 @@
     .galeria-mosaico--palma-196,
     .galeria-mosaico--palma-216,
     .galeria-mosaico--araripe-181,
-    .galeria-mosaico--araripe-182 {
+    .galeria-mosaico--araripe-182,
+    .galeria-mosaico--piscina-kids {
         grid-template-columns: 1fr;
     }
 }
