@@ -1,7 +1,7 @@
 /* Página de Projetos */
 .projetos-hero {
-    height: 55vh;
-    background-image: url('../fotos/Homeoce.jpeg');
+    height: 80vh;
+    background-image: none;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,7 +19,11 @@
 }
 
 .projetos-hero .hero-content {
-    padding: 70px 40px 0 40px;
+    padding: 140px 40px 0 40px;
+}
+
+.projetos-hero .hero-video {
+    object-position: center top;
 }
 
 .projetos-section {

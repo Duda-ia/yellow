@@ -330,22 +330,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sobre-content {
-    max-width: 800px;
+    max-width: 820px;
     margin: 0 auto;
     text-align: center;
 }
 
+.sobre-text {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.sobre-text .section-title {
+    margin-bottom: 2.75rem;
+}
+
 .manifesto {
-    margin-bottom: 4rem;
+    max-width: 820px;
+    margin: 0 auto 4rem auto;
 }
 
 .manifesto-text {
     font-size: 1.1rem;
     color: #CFCFCF;
-    margin-bottom: 2rem;
-    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    line-height: 1.85;
     font-weight: 400;
     letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+    .sobre-content,
+    .sobre-text,
+    .manifesto {
+        max-width: 90%;
+    }
 }
 
 .sobre-stats {
